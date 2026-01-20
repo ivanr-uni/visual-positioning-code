@@ -1,0 +1,4 @@
+split,n_rows,n_unique_filenames,duplicate_filenames,missing_images,nan_filename,nan_lat,nan_lon,nan_alt,nan_x,nan_y,nan_z,nan_w
+train,20513,20513,0,0,0,0,0,0,0,0,0,0
+val,2564,2564,0,0,0,0,0,0,0,0,0,0
+test,2565,2565,0,0,0,0,0,0,0,0,0,0

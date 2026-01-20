@@ -1,0 +1,42 @@
+{
+  "model_name": "ResNeXt50_32x4d",
+  "task": "3D regression (lat,lon,alt)",
+  "split": "test",
+  "weights": "drone_localization_pack/weights/best_geo_model_new.pth",
+  "dataset_root": "drone_localization_pack/dataset_v1",
+  "device": "cuda",
+  "scaler_used": true,
+  "per_param": {
+    "MAE": {
+      "lat": 2.2210288047790527,
+      "lon": 2.0793285369873047,
+      "alt": 0.061602793633937836
+    },
+    "MSE": {
+      "lat": 12.774696350097656,
+      "lon": 10.283031463623047,
+      "alt": 0.005856808740645647
+    },
+    "RMSE": {
+      "lat": 3.5741708278656006,
+      "lon": 3.206716537475586,
+      "alt": 0.07652979344129562
+    }
+  },
+  "total": {
+    "MAE": 1.453986644744873,
+    "MSE": 7.687861919403076,
+    "RMSE": 2.2858059406280518
+  },
+  "pos_error_2d": {
+    "mean": 3.4171555042266846,
+    "median": 1.4816421270370483,
+    "rmse": 4.801847457885742,
+    "p90": 8.544882774353027,
+    "p95": 10.451385498046875,
+    "p99": 13.119894981384277,
+    "min": 0.2392226904630661,
+    "max": 18.79494285583496
+  },
+  "n_samples": 2565
+}

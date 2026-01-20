@@ -1,0 +1,200 @@
+{
+  "dataset_root": "drone_localization_pack/dataset_v1",
+  "splits": [
+    {
+      "split": "train",
+      "labels_csv": "drone_localization_pack/dataset_v1/labels/train/_train_annotations.csv",
+      "images_dir": "drone_localization_pack/dataset_v1/images/train",
+      "n_rows": 20513,
+      "n_unique_filenames": 20513,
+      "missing_columns": [],
+      "nan_counts": {
+        "filename": 0,
+        "lat": 0,
+        "lon": 0,
+        "alt": 0,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 0
+      },
+      "numeric_stats": {
+        "lat": {
+          "min": -4.30865622,
+          "max": 11.90366173,
+          "mean": 3.741159136930239,
+          "std": 4.482707017103348
+        },
+        "lon": {
+          "min": -11.54860592,
+          "max": 4.83702898,
+          "mean": -4.283417763715205,
+          "std": 4.576843905402782
+        },
+        "alt": {
+          "min": -0.0,
+          "max": 1.63,
+          "mean": 1.3198245015356114,
+          "std": 0.10164031953864144
+        },
+        "x": {
+          "min": -0.40356019,
+          "max": 0.31759644,
+          "mean": -0.006749053571393749,
+          "std": 0.17915526125055148
+        },
+        "y": {
+          "min": -0.61903405,
+          "max": 0.22344895,
+          "mean": -0.14870647719299956,
+          "std": 0.10221919801090998
+        },
+        "z": {
+          "min": -0.99977601,
+          "max": 0.99977374,
+          "mean": 0.03061255869887389,
+          "std": 0.6851094472727218
+        },
+        "w": {
+          "min": -0.99959242,
+          "max": 0.00838995,
+          "mean": -0.5741069464593185,
+          "std": 0.3679464529273916
+        }
+      },
+      "missing_images": 0,
+      "missing_images_examples": [],
+      "duplicate_filenames": 0
+    },
+    {
+      "split": "val",
+      "labels_csv": "drone_localization_pack/dataset_v1/labels/val/_val_annotations.csv",
+      "images_dir": "drone_localization_pack/dataset_v1/images/val",
+      "n_rows": 2564,
+      "n_unique_filenames": 2564,
+      "missing_columns": [],
+      "nan_counts": {
+        "filename": 0,
+        "lat": 0,
+        "lon": 0,
+        "alt": 0,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 0
+      },
+      "numeric_stats": {
+        "lat": {
+          "min": -4.30397987,
+          "max": 11.90295887,
+          "mean": 3.9041411829446178,
+          "std": 4.532382153956622
+        },
+        "lon": {
+          "min": -11.54944324,
+          "max": 4.7877388,
+          "mean": -4.459514885156007,
+          "std": 4.54873216576727
+        },
+        "alt": {
+          "min": -0.0,
+          "max": 1.63,
+          "mean": 1.3230694227769113,
+          "std": 0.0888730440425505
+        },
+        "x": {
+          "min": -0.29452565,
+          "max": 0.25997078,
+          "mean": -0.006871281548361935,
+          "std": 0.17832061222870704
+        },
+        "y": {
+          "min": -0.28129324,
+          "max": 0.21555836,
+          "mean": -0.14781200132605304,
+          "std": 0.10371121868657103
+        },
+        "z": {
+          "min": -0.99993205,
+          "max": 0.98864317,
+          "mean": 0.029888375971138838,
+          "std": 0.6861545865424599
+        },
+        "w": {
+          "min": -0.99690461,
+          "max": 0.04396445,
+          "mean": -0.5724894643564743,
+          "std": 0.3689234652413457
+        }
+      },
+      "missing_images": 0,
+      "missing_images_examples": [],
+      "duplicate_filenames": 0
+    },
+    {
+      "split": "test",
+      "labels_csv": "drone_localization_pack/dataset_v1/labels/test/_test_annotations.csv",
+      "images_dir": "drone_localization_pack/dataset_v1/images/test",
+      "n_rows": 2565,
+      "n_unique_filenames": 2565,
+      "missing_columns": [],
+      "nan_counts": {
+        "filename": 0,
+        "lat": 0,
+        "lon": 0,
+        "alt": 0,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 0
+      },
+      "numeric_stats": {
+        "lat": {
+          "min": -4.29140139,
+          "max": 11.90371227,
+          "mean": 3.782170382951267,
+          "std": 4.5311401331945325
+        },
+        "lon": {
+          "min": -11.54734802,
+          "max": 4.8293829,
+          "mean": -4.157201629910332,
+          "std": 4.605576782361133
+        },
+        "alt": {
+          "min": -0.0,
+          "max": 1.58,
+          "mean": 1.3188732943469788,
+          "std": 0.10324981310729399
+        },
+        "x": {
+          "min": -0.25978294,
+          "max": 0.25975904,
+          "mean": -0.01634870377777778,
+          "std": 0.1801566032920377
+        },
+        "y": {
+          "min": -0.33192831,
+          "max": 0.16192643,
+          "mean": -0.1475305460116959,
+          "std": 0.10111310739075859
+        },
+        "z": {
+          "min": -0.99952048,
+          "max": 0.98670888,
+          "mean": 0.06328740428070175,
+          "std": 0.6890824595397178
+        },
+        "w": {
+          "min": -0.99957252,
+          "max": 0.00658195,
+          "mean": -0.5674672203469786,
+          "std": 0.3666445384788786
+        }
+      },
+      "missing_images": 0,
+      "missing_images_examples": [],
+      "duplicate_filenames": 0
+    }
+  ]
+}

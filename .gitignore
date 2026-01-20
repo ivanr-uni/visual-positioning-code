@@ -1,0 +1,2 @@
+dataset_v1/images/*
+dataset_v1/labels/**/*.txt
