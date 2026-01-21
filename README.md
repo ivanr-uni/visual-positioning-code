@@ -14,6 +14,61 @@
 - `requirements_full.txt` — зависимости + PyTorch/torchvision.
 - `requirements.lock` — "полный слепок" окружения Colab (опционально).
 
+## Структура файлов (ASCII tree)
+
+```
+drone_localization_pack/
+|-- README.md
+|-- .gitignore
+|-- drone_localization_pipeline.ipynb
+|-- requirements_base.txt
+|-- requirements_full.txt
+|-- requirements.lock
+|-- dataset_v1/
+|   |-- images/
+|   |   |-- train/
+|   |   |-- val/
+|   |   `-- test/
+|   `-- labels/
+|       |-- train/_train_annotations.csv
+|       |-- val/_val_annotations.csv
+|       `-- test/_test_annotations.csv
+|-- scripts/
+|   |-- 00_build_annotations_from_txt.py
+|   |-- 0_dataset_audit.py
+|   |-- 1_eval_resnet18_auto.py
+|   |-- 2_eval_resnet34_auto.py
+|   |-- 3_eval_resnext50_3d.py
+|   |-- 4_aggregate_results_v2.py
+|   `-- common.py
+`-- results/
+    |-- dataset_audit/
+    |   |-- dataset_audit_summary.json
+    |   |-- dataset_audit_table.csv
+    |   `-- dataset_audit_table.xlsx
+    |-- resnet18_2d/
+    |   |-- metrics_test.json
+    |   |-- predictions_test.csv
+    |   |-- report_test.csv
+    |   `-- resnet18_2d_test_*.png
+    |-- resnet34_7d/
+    |   |-- metrics_test.json
+    |   |-- predictions_test.csv
+    |   |-- report_test.csv
+    |   `-- resnet34_7d_test_*.png
+    |-- resnext50_3d/
+    |   |-- metrics_test.json
+    |   |-- predictions_test.csv
+    |   |-- report_test.csv
+    |   `-- resnext50_3d_test_*.png
+    |-- model_comparison.csv
+    |-- model_comparison.xlsx
+    |-- model_comparison_v2.csv
+    |-- model_comparison_v2.xlsx
+    |-- model_comparison_v3.csv
+    `-- model_comparison_v3.xlsx
+```
+
 ## Требования
 
 - Python 3.10+.
