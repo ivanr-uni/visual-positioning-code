@@ -169,11 +169,6 @@ pip install -r requirements_base.txt
 - `scripts/3_eval_resnext50_3d.py` — оценка ResNeXt50 (lat/lon/alt).
 - `scripts/4_aggregate_results_v2.py` — сбор результатов в Excel/CSV.
 
-Альтернативные/фиксированные варианты (на случай совместимости):
-- `scripts/1_eval_resnet18_7d.py`
-- `scripts/2_eval_resnet34_2d.py`
-- `scripts/4_aggregate_results.py`
-
 ## Notebook
 
 Для воспроизводимого запуска используйте ноутбук:
