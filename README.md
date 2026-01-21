@@ -3,13 +3,15 @@
 Репозиторий предназначен для **воспроизводимого прогона сохраненных ResNet/ResNeXt моделей** по изображению
 и получения единых артефактов (predictions/report/metrics/plots) для магистерской работы.
 
-Важно: **датасет и веса не входят в репозиторий** — их нужно скачать и положить в соответствующие папки.
+Важно: **изображения датасета не входят в репозиторий** (папка `dataset_v1/images/` обычно заполняется отдельно).
+Веса моделей находятся в `weights/`.
 
 ## Состав репозитория
 
-- `dataset_v1/` — структура датасета (images/labels).
+- `dataset_v1/` — структура датасета (`labels` в CSV; `images` заполняются отдельно).
 - `scripts/` — скрипты аудита, оценки моделей и агрегации результатов.
 - `results/` — примеры выходных артефактов (CSV/JSON/PNG/XLSX).
+- `weights/` — веса моделей (`.pth`) для воспроизведения метрик.
 - `requirements_base.txt` — зависимости без PyTorch.
 - `requirements_full.txt` — зависимости + PyTorch/torchvision.
 - `requirements.lock` — "полный слепок" окружения Colab (опционально).
@@ -24,6 +26,10 @@ drone_localization_pack/
 |-- requirements_base.txt
 |-- requirements_full.txt
 |-- requirements.lock
+|-- weights/
+|   |-- best_model_18_100_128_2.pth
+|   |-- best_model_34_100_128.pth
+|   `-- best_geo_model_new.pth
 |-- dataset_v1/
 |   |-- images/
 |   |   |-- train/
@@ -203,7 +209,8 @@ pip install -r requirements_base.txt
 
 2) Установите PyTorch по официальной инструкции (CPU/CUDA).
 
-3) Скопируйте датасет в `dataset_v1/` и веса в `weights/`.
+3) Скопируйте датасет в `dataset_v1/`.
+   Веса для воспроизведения уже лежат в `weights/` (если используете другие — замените файлы там).
 
 4) Запустите те же команды из раздела Colab (пункты 5–8).
 
